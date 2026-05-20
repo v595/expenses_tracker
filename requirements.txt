@@ -1,0 +1,6 @@
+Flask
+sqlite3
+datetime
+collections
+reportlab
+customtkinter
