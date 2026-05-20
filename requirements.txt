@@ -2,3 +2,4 @@ Flask
 datetime
 reportlab
 customtkinter
+gunicorn
