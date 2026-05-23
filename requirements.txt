@@ -3,3 +3,5 @@ datetime
 reportlab
 customtkinter
 gunicorn
+flask>=2.3.0
+reportlab>=4.0.0
