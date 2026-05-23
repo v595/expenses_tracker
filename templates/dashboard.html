@@ -615,10 +615,10 @@ body {
         <div class="section-body">
           <div class="chart-wrap"><canvas id="typeChart"></canvas></div>
           <div style="margin-top:12px">
-            {% for label, amount in zip(type_labels, type_amounts) %}
+            {% for i in range(type_labels|length) %}
             <div style="display:flex;justify-content:space-between;align-items:center;padding:6px 0;border-bottom:1px solid rgba(30,45,74,0.5);font-size:13px">
-              <span class="type-badge type-{{ label }}">{{ label|capitalize }}</span>
-              <span style="font-weight:700">₹{{ "{:,.0f}".format(amount) }}</span>
+              <span class="type-badge type-{{ type_labels[i] }}">{{ type_labels[i]|capitalize }}</span>
+              <span style="font-weight:700">₹{{ "{:,.0f}".format(type_amounts[i]) }}</span>
             </div>
             {% endfor %}
           </div>
